@@ -260,6 +260,33 @@ input[type="submit"] {
 	padding: .5em 1em
 }
 
+
+.auto_size {
+	width: 100%;
+	height: auto;
+	}
+
+.picture img {
+	width: 100%;
+	height: auto;
+}
+
+footer {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	padding-top: 40px;
+	padding-bottom: 20px;
+	text-align: center;
+	background-color: #F6D2B8;
+}
+
+footer li {
+	list-style: none;
+}
+
+
 @media all and (max-width: 1180px) {
 	.picture {
 		flex : 2;
@@ -367,5 +394,10 @@ input[type="submit"] {
 	}
 	.picture {
 		width: 80%;
+	}
+	footer {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
 	}
 }
