@@ -56,8 +56,9 @@
         return;
       }
     });
-
+    /* event clicks to filter images according to their categories */
     $(".gallery").on("click", ".nav-link", $.fn.mauGallery.methods.filterByTag);
+    /* event clicks to move from one image to another in the modal */
     $(".gallery").on("click", ".mg-prev", () =>
       $.fn.mauGallery.methods.prevImage(options.lightboxId)
     );
@@ -119,7 +120,7 @@
         .attr("src", element.attr("src"));
       $(`#${lightboxId}`).modal("toggle");
     },
-    prevImage() {
+    prevImage() { /* Previous image */
       let activeImage = null;
       $("img.gallery-item").each(function() {
         if ($(this).attr("src") === $(".lightboxImage").attr("src")) {
@@ -158,7 +159,7 @@
         imagesCollection[imagesCollection.length - 1];
       $(".lightboxImage").attr("src", $(next).attr("src"));
     },
-    nextImage() {
+    nextImage() { /* Next image */
       let activeImage = null;
       $("img.gallery-item").each(function() {
         if ($(this).attr("src") === $(".lightboxImage").attr("src")) {
@@ -235,7 +236,7 @@
         console.error(`Unknown tags position: ${position}`);
       }
     },
-    filterByTag() {
+    filterByTag() { /* Categories filter in modal */
       if ($(this).hasClass("active-tag")) {
         return;
       }
