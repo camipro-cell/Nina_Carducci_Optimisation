@@ -146,7 +146,7 @@
           }
         });
       }
-      let index = 0;
+      let index = 0,
         next = null;
 
       $(imagesCollection).each(function(i) {
@@ -185,7 +185,7 @@
           }
         });
       }
-      let index = 0;
+      let index = 0,
        next = null;
 
       $(imagesCollection).each(function(i) {
@@ -240,7 +240,7 @@
       if ($(this).hasClass("active-tag")) {
         return;
       }
-      $(".active").removeClass("active active-tag");
+      $(".active-tag").removeClass("active active-tag");
       $(this).addClass("active active-tag");
 
       var tag = $(this).data("images-toggle");

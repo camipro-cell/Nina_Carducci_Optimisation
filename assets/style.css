@@ -272,6 +272,7 @@ body {
 	background-color: white;
 	position: sticky;
 	top:0;
+	width: 100%;
 	z-index: 1000;
 	display: flex;
 	justify-content: space-between;
@@ -297,7 +298,11 @@ nav li {
 
 nav a {
 	text-decoration: none;
-	color: #000
+	color: #000;
+}
+
+a:hover {
+	color: #000;
 }
 
 /* CSS #about */
@@ -358,14 +363,18 @@ nav a {
 	justify-content: center;
 }
 
+.nav li {
+	padding-inline: 10px;
+}
+
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
-	color: #fff;
-	background-color: #605c37;
-	border-radius:0 ;
+	color: #000;
+	background-color: #BEB45A;
+	border-radius: 0 ;
 }
 
 .nav-pills .nav-link {
-	color: #000
+	color: #000;
 }
 
 .nav-pills .nav-link:hover {
@@ -594,11 +603,11 @@ footer li {
 		flex-direction: column;
 		padding-inline: 0;
 	}
-	.top-header .nav, .top-header .nav ul {
+	.top-header nav, .top-header nav ul {
 		width: 100%;
 		padding: 0 0 0 0;
 	}
-	.top-header .nav li {
+	.top-header nav li {
 		flex: 1;
 		padding-block: 1em;
 		text-align: center;
