@@ -246,7 +246,7 @@ a:hover {
 	color: #000;
 }
 
-.nav-pills .nav-link:hover {
+.nav-pills .nav-link:hover, .gallery img:hover {
 	cursor: pointer;
 }
 
